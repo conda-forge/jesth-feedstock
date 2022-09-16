@@ -1,5 +1,5 @@
 {% set name = "jesth" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jesth-{{ version }}.tar.gz
-  sha256: 2110530e8b788700c65790f9d4f17d71c9600826567719be114210fe5c22d28b
+  sha256: 442fb5bb8b1a2a9306099384862737d6a31e30b73e109f7f2e1c194954ab5045
 
 build:
   entry_points:
