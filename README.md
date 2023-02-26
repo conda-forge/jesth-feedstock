@@ -1,11 +1,11 @@
-About jesth
-===========
+About jesth-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jesth-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyrustic/jesth
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jesth-feedstock/blob/main/LICENSE.txt)
 
 Summary: Park and render Jesth notes which inherits properties from  the INI and TOML files
 
