@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jesth-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jesth-{{ version }}.tar.gz
   sha256: 8fa5f78065d43c790eb26b33ef690518412f5cbe8a69a61637da2f04761efc46
 
 build:
@@ -14,14 +14,14 @@ build:
     - jesth = jesth.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
-    - python >=3.5
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -31,6 +31,7 @@ test:
     - jesth --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pyrustic/jesth
